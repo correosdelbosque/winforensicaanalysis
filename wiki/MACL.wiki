@@ -7,7 +7,7 @@ The development of this script is described in [http://windowsir.blogspot.com/20
 
 Please note that this script is not intended for _all_ MAC addresses.  It is commonly known within the DFIR community that Windows systems maintain their own MAC address(es) in specific locations within the Registry; that being said, this script is intended specifically for looking up WAP MAC addresses.
 
-Also, this script requires that you have a WiGLE.net account already in order to perform the lookup, and run the script from an Internet-connected system.
+Also, this script requires that you have a WiGLE.net account already in order to perform the lookup, and run the script from an Internet-connected system.  WiGLE.net accounts are free.
 
 == Dependencies ==
 This script requires the use of the Net::Wigle Perl module.  If you have the ActiveState Perl distribution installed, you can update your system (must be Internet-connected) using the following command:
