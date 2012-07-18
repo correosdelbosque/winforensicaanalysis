@@ -1,0 +1,29 @@
+#summary Describe the use/purpose of the jobparse script
+
+= Introduction =
+
+stuff
+
+= Details =
+
+== Syntax ==
+
+{{{
+jobparse [option]
+Parse XP/2003 .job file metadata
+
+  -d directory...parse all files in directory
+  -f file........parse a single .job file
+  -c ............Comma-separated (.csv) output (open in Excel)
+  -t ............get .job metadata in TLN format
+  -s server......add name of server to TLN ouput (use with -t)
+  -h ............Help (print this information)
+
+Ex: C:\>jobparse -f <path_to_job_file> -t
+    C:\>jobparse -d C:\Windows\Tasks -c
+
+**All times printed as GMT/UTC
+
+copyright 2012 Quantum Analytics Research, LLC
+}}}
+
