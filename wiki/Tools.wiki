@@ -1,4 +1,4 @@
-#summary Tools page
+#summary This page provides links to the various tools available at the site
 
 = Introduction =
 
@@ -6,4 +6,3 @@ Add your content here.
 
 
 = Details =
-
