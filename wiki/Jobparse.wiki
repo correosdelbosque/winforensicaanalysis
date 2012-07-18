@@ -2,9 +2,11 @@
 
 = Introduction =
 
-stuff
+This page describes the use of the jobparse.pl Perl script available in the code repository.
 
 = Details =
+
+Jobparse.pl is intended to parse 
 
 == Syntax ==
 
@@ -27,3 +29,5 @@ Ex: C:\>jobparse -f <path_to_job_file> -t
 copyright 2012 Quantum Analytics Research, LLC
 }}}
 
+=== To-Do ===
+The time field stored within a .job file is 128-bit [SYSTEMTIME:http://msdn.microsoft.com/en-us/library/windows/desktop/ms724950(v=vs.85).aspx] object; the script is standalone and does not take the Time Zone settings of the system being examined into account.
