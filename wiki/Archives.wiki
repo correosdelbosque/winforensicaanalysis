@@ -1,0 +1,5 @@
+#summary Description of archives available in the code repository
+
+= Archives =
+
+Most of the archives provided in the code repository are associated with the books I've written.  For example, the wfa3e.zip archive contains the materials associated with the book, [http://www.amazon.com/Windows-Forensic-Analysis-Toolkit-Third/dp/1597497274/ref=sr_1_1?s=books&ie=UTF8&qid=1342573478&sr=1-1&keywords=carvey Windows Forensic Analysis Toolkit 3rd edition], and RR.zip contains the materials associated with the [http://www.amazon.com/Windows-Registry-Forensics-Advanced-Forensic/dp/1597495808/ref=sr_1_2?s=books&ie=UTF8&qid=1342573478&sr=1-2&keywords=carvey Windows Registry Forensics] book.
