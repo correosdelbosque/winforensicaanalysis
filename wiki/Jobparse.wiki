@@ -6,9 +6,14 @@ This page describes the use of the jobparse.pl Perl script available in the code
 
 = Details =
 
-Jobparse.pl is intended to parse 
+Jobparse.pl is intended to parse Scheduled Task files from Windows XP/2003 systems.  These files consist of a binary format; Scheduled Task files from later versions of Windows follow an XML format. 
+
+The script parses data from the .job file based, in part, on the Microsoft [http://msdn.microsoft.com/en-us/library/cc248285%28PROT.13%29.aspx .JOB File Format].
+
+Scheduled tasks can be created using the [http://technet.microsoft.com/en-us/library/cc772785%28WS.10%29.aspx schtasks.exe] command, or the [http://technet.microsoft.com/en-us/library/cc755618%28WS.10%29.aspx at.exe] command, as well as the Scheduled Tasks wizard (available via the Control Panel).  The at.exe command has been observed being used for lateral movement within an infrastructure; an intruder who has the appropriate credentials can create a Scheduled Task to run on a remote system.
 
 == Syntax ==
+The following is the syntax/usage for the script, which you can view by running the script with no arguments, or with the '-h' switch:
 
 {{{
 jobparse [option]
@@ -28,6 +33,8 @@ Ex: C:\>jobparse -f <path_to_job_file> -t
 
 copyright 2012 Quantum Analytics Research, LLC
 }}}
+
+Most of the switches are pretty self-explanatory.
 
 === To-Do ===
 The time field stored within a .job file is 128-bit [http://msdn.microsoft.com/en-us/library/windows/desktop/ms724950(v=vs.85).aspx SYSTEMTIME] object; the script is standalone and does not take the Time Zone settings of the system being examined into account.
