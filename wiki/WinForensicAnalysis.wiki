@@ -16,3 +16,5 @@ Add your content here.  Format your content with:
 == Pages ==
 
 === [Tools] ===
+
+=== [Articles] ===
