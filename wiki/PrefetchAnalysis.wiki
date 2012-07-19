@@ -34,4 +34,4 @@ By default, server systems (Windows 2003, 2008, 2008R2) have boot prefetching en
 == Analysis ==
 Prefetch files can be used in a number of ways during analysis.  Perhaps the best known aspect of the artifact is that the existence of a prefetch file is an indicator of program execution.
 
-When used in timelines, the embedded last execution time 
+When used in timelines, the embedded last execution time from the .pf file will usually correspond with the last modification time of the file itself.
