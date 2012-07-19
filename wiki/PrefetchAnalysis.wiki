@@ -11,7 +11,7 @@ Prefetch files are those files with a *.pf* extension, found in the C:\Windows\P
 == Registry ==
 This [http://msdn.microsoft.com/en-us/library/ms940847(v=winembedded.5).aspx page] at the Microsoft web site describes a Registry value that effectively controls the use of Prefetching on Windows systems.
 
-For reference, the path to the value is:
+The path to the value listed on the MS page is:
 
 {{{
 HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
