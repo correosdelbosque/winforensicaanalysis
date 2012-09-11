@@ -8,10 +8,10 @@ Another aspect of digital analysis is that there are utilities out there that al
 Browser analysis can be made up of several components.  For example, there're are the tell-tale signs of a browser being used (ie, Prefetch file, entry in the user's UserAssist subkeys, etc.), then there's the browser cache, history, cookies, etc.  Beyond that, you may find indications of session restore files, which are maintained by browsers in case they crash.  I'm sure you've seen this...you may have experienced an incident in which your browser crashed, and when you restarted it, it began trying to repopulate the tabs that you had open when it crashed.  These files can provide some significant indication of (and insight into) user activity at a specific point in time.
 
 Some of the areas that you want to look at with respect to web browser forensics include (but are not limited to):
-* Browser history files
-* Browser configuration settings
-* Cookies
-* Browser session restore files
+ * Browser history files
+ * Browser configuration settings
+ * Cookies
+ * Browser session restore files
 
 
 == IE ==
