@@ -1,6 +1,6 @@
 #summary Page maintaining information regarding browser forensics
 
-= Browser Forensics =
+= Web Browser Forensics =
 Analysis of a user's activity on a system, including their access to off-system resources and use of a web browser can often be a significant aspect of an examination.
 
 Another aspect of digital analysis is that there are utilities out there that allow users to wipe some of the artifacts of their activities (such as CCleaner) but knowledgeable analysts may still be able to find indications of useful artifacts.
@@ -23,13 +23,34 @@ Yogesh's post on [http://www.swiftforensics.com/2011/09/internet-explorer-recove
 
 == Firefox ==
 
-
+Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script for parsing Firefox browser history.
 
 
 
 == Chrome ==
 
+Ryan Benson's [http://code.google.com/p/hindsight-internet-history/downloads/list hindsight] Perl script for viewing Chrome history
 
+CCLForensics post on [http://digitalinvestigation.wordpress.com/2012/09/03/chrome-session-and-tabs-files-and-the-puzzle-of-the-pickle/ Chrome Session and Tabs Files], and [http://code.google.com/p/ccl-ssns/ here]'s a Python module for parsing these files.
+
+One of the things I say quite often with respect to Registry analysis is that there are a number of Registry settings that can have an impact on what you are, or are not, seeing in your analysis.  The same holds true for browser analysis, with respect to the available add-on and plugins that are installed with the browser.  For IE, we've most often seen as browser helper objects.  For other browsers, these are referred to as plugins or add-ons.
+
+Jason Hale recently blogged regarding the forensic implications of a Firefox add-on called [http://dfstream.blogspot.com/2012/09/foxtab-mozillas-hidden-camera.html FoxTab].
 
 
 == Resources == 
+
+
+Be sure to check out [http://www.browserforensics.com/ BrowserForensics.com]
+
+Check out the [http://sqlitebrowser.sourceforge.net/ SQLite Browser] for browsing SQLite databases, such as those used by Firefox and Chrome for storing history information.
+
+Mandiant [http://www.mandiant.com/resources/download/web-historian Web Historian] allows you to view the contents of the IE, Firefox and Chrome  browsers
+
+NirSoft has a [http://blog.nirsoft.net/2012/08/22/new-web-browser-history-viewer/ web browser history viewer] that works on IE, Firefox, Chrome, and Safari.  Here are all of NirSoft's browser tools.
+
+=== Tidbits ===
+
+Another source of information that may be useful is the Windows Event Log; events with source Microsoft-Windows-DNS-Client and event ID 1014 indicate that the name resolution for a host had timed out...I've seen some pretty interesting entries for this particular
+
+Somewhat related to web browser forensics, check out [http://linuxsleuthing.blogspot.com/2012/09/facebook-search-history.html this post] from Linux Sleuthing regarding Google and Facebook search artifacts. 
