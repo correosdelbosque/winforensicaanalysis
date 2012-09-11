@@ -56,6 +56,8 @@ Mandiant [http://www.mandiant.com/resources/download/web-historian Web Historian
 
 NirSoft has a [http://blog.nirsoft.net/2012/08/22/new-web-browser-history-viewer/ web browser history viewer] that works on IE, Firefox, Chrome, and Safari.  Here are all of NirSoft's browser tools.
 
+
+
 === Tidbits ===
 
 Another source of information that may be useful is the Windows Event Log; events with source Microsoft-Windows-DNS-Client and event ID 1014 indicate that the name resolution for a host had timed out...I've seen some pretty interesting entries for this particular
