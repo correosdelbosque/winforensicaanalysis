@@ -1,0 +1,35 @@
+#summary Page maintaining information regarding browser forensics
+
+= Browser Forensics =
+Analysis of a user's activity on a system, including their access to off-system resources and use of a web browser can often be a significant aspect of an examination.
+
+Another aspect of digital analysis is that there are utilities out there that allow users to wipe some of the artifacts of their activities (such as CCleaner) but knowledgeable analysts may still be able to find indications of useful artifacts.
+
+Browser analysis can be made up of several components.  For example, there're are the tell-tale signs of a browser being used (ie, Prefetch file, entry in the user's UserAssist subkeys, etc.), then there's the browser cache, history, cookies, etc.  Beyond that, you may find indications of session restore files, which are maintained by browsers in case they crash.  I'm sure you've seen this...you may have experienced an incident in which your browser crashed, and when you restarted it, it began trying to repopulate the tabs that you had open when it crashed.  These files can provide some significant indication of (and insight into) user activity at a specific point in time.
+
+
+
+== IE ==
+Keith Jones' McAfee/Foundstone paper regarding the [http://www.mcafee.com/us/resources/white-papers/foundstone/wp-pasco.pdf Forensic Analysis of IE Activity Files] paper.  Also, see Keith's post on [http://www.symantec.com/connect/articles/web-browser-forensics-part-1 web browser forensics, pt. I]
+
+You can use Perl's [http://search.cpan.org/~ishigaki/Win32-UrlCache-0.06/lib/Win32/UrlCache.pm Win32::URLCache] module to write your own Perl script to parse IE index.dat files. 
+
+TZWorks has an "[http://tzworks.net/prototype_page.php?proto_id=6 id]" utility for parsing Windows index.dat files.
+
+
+Yogesh's post on [http://www.swiftforensics.com/2011/09/internet-explorer-recoverystore-aka.html IE RecoveryStore] browser session file (format specification can be found [http://www.swiftforensics.com/p/downloads.html here])
+
+
+
+== Firefox ==
+
+
+
+
+
+== Chrome ==
+
+
+
+
+== Resources == 
