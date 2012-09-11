@@ -24,6 +24,7 @@ TZWorks has an "[http://tzworks.net/prototype_page.php?proto_id=6 id]" utility f
 
 Yogesh's post on [http://www.swiftforensics.com/2011/09/internet-explorer-recoverystore-aka.html IE RecoveryStore] browser session file (format specification can be found [http://www.swiftforensics.com/p/downloads.html here])
 
+A number of Registry keys (specifically, within the user's NTUSER.DAT hive) can provide information regarding IE usage.  For example, the "TypedURLs" (be sure to read [http://crucialsecurityblog.harris.com/2011/03/14/typedurls-part-1/ this blog post] on this key) key will list URLs typed in via the Address Bar, and on Windows 8, the "TypedURLsTime" key will contain values that correlate to similarly-named values beneath the "TypedURLs" key.
 
 
 == Firefox ==
