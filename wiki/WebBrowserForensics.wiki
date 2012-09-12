@@ -29,7 +29,7 @@ A number of Registry keys (specifically, within the user's NTUSER.DAT hive) can 
 
 == Firefox ==
 
-Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script for parsing Firefox browser history.
+Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script for parsing Firefox browser history, making us of Perl's access to databases.
 
 
 
