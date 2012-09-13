@@ -15,33 +15,38 @@ Some of the areas that you want to look at with respect to web browser forensics
  * Cookies
  * Browser session restore files
 
+One of the things I say quite often with respect to Registry analysis is that there are a number of Registry settings that can have an impact on what you are, or are not, seeing in your analysis.  The same holds true for browser analysis, with respect to the available add-on and plugins that are installed with the browser.  For IE, we've most often seen as browser helper objects.  For other browsers, these are referred to as plugins or add-ons.
+
 == IE ==
+
+=== History ===
 Keith Jones' McAfee/Foundstone paper regarding the [http://www.mcafee.com/us/resources/white-papers/foundstone/wp-pasco.pdf Forensic Analysis of IE Activity Files] paper.  Also, see Keith's post on [http://www.symantec.com/connect/articles/web-browser-forensics-part-1 web browser forensics, pt. I]
 
 You can use Perl's [http://search.cpan.org/~ishigaki/Win32-UrlCache-0.06/lib/Win32/UrlCache.pm Win32::URLCache] module to write your own Perl script to parse IE index.dat files. 
 
 TZWorks has an "[http://tzworks.net/prototype_page.php?proto_id=6 id]" utility for parsing Windows index.dat files.
 
-
+=== Session Restore Info ===
 Yogesh's post on [http://www.swiftforensics.com/2011/09/internet-explorer-recoverystore-aka.html IE RecoveryStore] browser session file (format specification can be found [http://www.swiftforensics.com/p/downloads.html here])
 
+=== Configuration/Registry ===
 A number of Registry keys (specifically, within the user's NTUSER.DAT hive) can provide information regarding IE usage.  For example, the "TypedURLs" (be sure to read [http://crucialsecurityblog.harris.com/2011/03/14/typedurls-part-1/ this blog post] on this key) key will list URLs typed in via the Address Bar, and on Windows 8, the "TypedURLsTime" key will contain values that correlate to similarly-named values beneath the "TypedURLs" key.
 
-
 == Firefox ==
-
+   
+=== History ===
 Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script for parsing Firefox browser history, making us of Perl's access to databases.
 
-
+=== Add-ons ===
+Jason Hale recently blogged regarding the forensic implications of a Firefox add-on called [http://dfstream.blogspot.com/2012/09/foxtab-mozillas-hidden-camera.html FoxTab].
 
 == Chrome ==
+
+=== History ===
 Ryan Benson's [http://code.google.com/p/hindsight-internet-history/downloads/list hindsight] Perl script for viewing Chrome history
 
+=== Session Restore ===
 CCLForensics post on [http://digitalinvestigation.wordpress.com/2012/09/03/chrome-session-and-tabs-files-and-the-puzzle-of-the-pickle/ Chrome Session and Tabs Files], and [http://code.google.com/p/ccl-ssns/ here]'s a Python module for parsing these files.
-
-One of the things I say quite often with respect to Registry analysis is that there are a number of Registry settings that can have an impact on what you are, or are not, seeing in your analysis.  The same holds true for browser analysis, with respect to the available add-on and plugins that are installed with the browser.  For IE, we've most often seen as browser helper objects.  For other browsers, these are referred to as plugins or add-ons.
-
-Jason Hale recently blogged regarding the forensic implications of a Firefox add-on called [http://dfstream.blogspot.com/2012/09/foxtab-mozillas-hidden-camera.html FoxTab].
 
 == Resources == 
 The first half of chapter 7 of the book, _[http://syngress.com/digital-forensics/Digital-Forensics-with-Open-Source-Tools/ Digital Forensics with Open Source Tools]_ provides some excellent information regarding where to go to find browser artifacts on various systems.
