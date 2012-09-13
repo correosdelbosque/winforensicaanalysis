@@ -10,7 +10,7 @@ Browser analysis can be made up of several components.  For example, there're ar
 Some of the areas that you want to look at with respect to web browser forensics include (but are not limited to):
  * Browser history files
  * Browser configuration settings
- * Browser 'favorites' and/or bookmarks
+ * Browser 'favorites' and/or bookmarks - can contain time stamps indicating when the bookmark was created, and last accessed
  * Browser plugins and add-ons
  * Cookies
  * Browser session restore files
