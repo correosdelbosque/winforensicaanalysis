@@ -26,6 +26,8 @@ You can use Perl's [http://search.cpan.org/~ishigaki/Win32-UrlCache-0.06/lib/Win
 
 TZWorks has an "[http://tzworks.net/prototype_page.php?proto_id=6 id]" utility for parsing Windows index.dat files.
 
+Joachim Metz's index.dat [http://code.google.com/p/libmsiecf/downloads/detail?name=MSIE%20Cache%20File%20%28index.dat%29%20format.pdf format specification paper], part of the libmsiecf project. 
+
 === Session Restore Info ===
 Yogesh's post on [http://www.swiftforensics.com/2011/09/internet-explorer-recoverystore-aka.html IE RecoveryStore] browser session file (format specification can be found [http://www.swiftforensics.com/p/downloads.html here])
 
