@@ -20,6 +20,8 @@ One of the things I say quite often with respect to Registry analysis is that th
 == IE ==
 
 === History ===
+_File location_: (Win7) %UserProfile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
+
 Keith Jones' McAfee/Foundstone paper regarding the [http://www.mcafee.com/us/resources/white-papers/foundstone/wp-pasco.pdf Forensic Analysis of IE Activity Files] paper.  Also, see Keith's post on [http://www.symantec.com/connect/articles/web-browser-forensics-part-1 web browser forensics, pt. I]
 
 You can use Perl's [http://search.cpan.org/~ishigaki/Win32-UrlCache-0.06/lib/Win32/UrlCache.pm Win32::URLCache] module to write your own Perl script to parse IE index.dat files. 
