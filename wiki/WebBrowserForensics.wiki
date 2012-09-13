@@ -49,13 +49,17 @@ Ryan Benson's [http://code.google.com/p/hindsight-internet-history/downloads/lis
 CCLForensics post on [http://digitalinvestigation.wordpress.com/2012/09/03/chrome-session-and-tabs-files-and-the-puzzle-of-the-pickle/ Chrome Session and Tabs Files], and [http://code.google.com/p/ccl-ssns/ here]'s a Python module for parsing these files.
 
 == Resources == 
-The first half of chapter 7 of the book, _[http://syngress.com/digital-forensics/Digital-Forensics-with-Open-Source-Tools/ Digital Forensics with Open Source Tools]_ provides some excellent information regarding where to go to find browser artifacts on various systems.
+This section provides more general resources that do not fit neatly into one of the browser sections above; in most cases, the information here may apply to more than one of the identified browsers.
+
+The first half of chapter 7 of the book, _[http://syngress.com/digital-forensics/Digital-Forensics-with-Open-Source-Tools/ Digital Forensics with Open Source Tools]_ provides some excellent information regarding where to go to find browser artifacts on various systems.  The book also describes tools for extracting and displaying the available information.
 
 A great tool for collecting information regarding a user's Internet activities in general is [http://www.magnetforensics.com/products/internet-evidence-finder/ IEF] from Magnet Forensics.
 
 Be sure to check out [http://www.browserforensics.com/ BrowserForensics.com] for more information on browser forensics
 
 Check out the [http://sqlitebrowser.sourceforge.net/ SQLite Browser] for browsing SQLite databases, such as those used by Firefox and Chrome for storing history information.
+
+_Note:_ When performing an exam of a system on which IE, Firefox and Chrome had all been installed, and CCleaner run, I used SQLite Browser to attempt to parse the contents of the Firefox places.sqlite history database, as well as the Chrome History db.  In both cases, the tool found nothing, which was not surprising.  However, I verified this information using other tools, including opening the files in a hex editor.
 
 Mandiant [http://www.mandiant.com/resources/download/web-historian Web Historian] allows you to view the contents of the IE, Firefox and Chrome  browsers
 
