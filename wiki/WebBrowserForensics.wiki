@@ -10,9 +10,10 @@ Browser analysis can be made up of several components.  For example, there're ar
 Some of the areas that you want to look at with respect to web browser forensics include (but are not limited to):
  * Browser history files
  * Browser configuration settings
+ * Browser 'favorites' and/or bookmarks
+ * Browser plugins and add-ons
  * Cookies
  * Browser session restore files
-
 
 == IE ==
 Keith Jones' McAfee/Foundstone paper regarding the [http://www.mcafee.com/us/resources/white-papers/foundstone/wp-pasco.pdf Forensic Analysis of IE Activity Files] paper.  Also, see Keith's post on [http://www.symantec.com/connect/articles/web-browser-forensics-part-1 web browser forensics, pt. I]
@@ -34,7 +35,6 @@ Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script
 
 
 == Chrome ==
-
 Ryan Benson's [http://code.google.com/p/hindsight-internet-history/downloads/list hindsight] Perl script for viewing Chrome history
 
 CCLForensics post on [http://digitalinvestigation.wordpress.com/2012/09/03/chrome-session-and-tabs-files-and-the-puzzle-of-the-pickle/ Chrome Session and Tabs Files], and [http://code.google.com/p/ccl-ssns/ here]'s a Python module for parsing these files.
@@ -43,10 +43,10 @@ One of the things I say quite often with respect to Registry analysis is that th
 
 Jason Hale recently blogged regarding the forensic implications of a Firefox add-on called [http://dfstream.blogspot.com/2012/09/foxtab-mozillas-hidden-camera.html FoxTab].
 
-
 == Resources == 
-A great tool for collecting information regarding a user's Internet activities in general is [http://www.magnetforensics.com/products/internet-evidence-finder/ IEF] from Magnet Forensics.
+The first half of chapter 7 of the book, _[http://syngress.com/digital-forensics/Digital-Forensics-with-Open-Source-Tools/ Digital Forensics with Open Source Tools]_ provides some excellent information regarding where to go to find browser artifacts on various systems.
 
+A great tool for collecting information regarding a user's Internet activities in general is [http://www.magnetforensics.com/products/internet-evidence-finder/ IEF] from Magnet Forensics.
 
 Be sure to check out [http://www.browserforensics.com/ BrowserForensics.com] for more information on browser forensics
 
@@ -56,9 +56,8 @@ Mandiant [http://www.mandiant.com/resources/download/web-historian Web Historian
 
 NirSoft has a [http://blog.nirsoft.net/2012/08/22/new-web-browser-history-viewer/ web browser history viewer] that works on IE, Firefox, Chrome, and Safari.  Here are all of NirSoft's browser tools.
 
-
-
 === Tidbits ===
+The following are some tidbits that may be useful during an examination: 
 
 Another source of information that may be useful is the Windows Event Log; events with source Microsoft-Windows-DNS-Client and event ID 1014 indicate that the name resolution for a host had timed out...I've seen some pretty interesting entries for this particular
 
