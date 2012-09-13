@@ -37,6 +37,12 @@ A number of Registry keys (specifically, within the user's NTUSER.DAT hive) can 
 === History ===
 Kristinn's [http://blog.kiddaland.net/dw/ff3histview ff3histview.pl] Perl script for parsing Firefox browser history, making us of Perl's access to databases.
 
+Firefox history analysis using the SQLite Manager plugin (found [http://resources.infosecinstitute.com/firefox-and-sqlite-forensics/ here])
+
+Claus Vaca's Grand Stream Dreams [http://resources.infosecinstitute.com/firefox-and-sqlite-forensics/ blog post regarding Firefox Forensics] from 2007
+
+Firefox 3 analysis [http://cryptocomb.org/Mozilla%20Ref%20Manual.pdf reference manual] (from the Canadian Police, dated 2008, revised 2009)
+
 === Add-ons ===
 Jason Hale recently blogged regarding the forensic implications of a Firefox add-on called [http://dfstream.blogspot.com/2012/09/foxtab-mozillas-hidden-camera.html FoxTab].
 
