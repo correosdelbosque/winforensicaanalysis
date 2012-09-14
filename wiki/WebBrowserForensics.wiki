@@ -65,6 +65,8 @@ The first half of chapter 7 of the book, _[http://syngress.com/digital-forensics
 
 A great tool for collecting information regarding a user's Internet activities in general is [http://www.magnetforensics.com/products/internet-evidence-finder/ IEF] from Magnet Forensics.
 
+Another available tool is [http://darkcodersc.blogspot.com/2012/05/browser-forensic-tool-v20-updated.html Browser Forensic Tool v2.0] from DarkCoderSC.
+
 Be sure to check out [http://www.browserforensics.com/ BrowserForensics.com] for more information on browser forensics
 
 Check out the [http://sqlitebrowser.sourceforge.net/ SQLite Browser] for browsing SQLite databases, such as those used by Firefox and Chrome for storing history information.
